@@ -3,8 +3,9 @@
 try : 
     #code to exectue
     pass
-except Exception:
+except Exception as variable_name:
     #error action
+    print(variable_name)
     pass
 else : #not mendatory
     pass

@@ -86,38 +86,6 @@ print(dict)
 print("NY" in dict.values())
 '''
 
-'''
-def max(a, b):
-    if(a>b):
-        print(a)
-    else : print(b)
-
-max(5,9)
-
-def max(*numbers):
-    listnum = []
-    for number in numbers:
-        listnum.append(number)
-    max = listnum[0]
-    min = listnum[0]
-    for i in range(len(listnum)):        
-        if(listnum[i] > max): max = listnum[i]
-        if(listnum[i] < min): min = listnum[i]
-    return max, min
-    
-print(max(5, 9, 7, 4, 3))
-
-def max(listnum):
-    max = listnum[0]
-    min = listnum[0]
-    for i in range(len(listnum)):        
-        if(listnum[i] > max): max = listnum[i]
-        if(listnum[i] < min): min = listnum[i]
-    return max, min
-
-listnum = [5, 0, 7, 4, 2, 3]
-print(max(listnum))
-'''
 
 
 
