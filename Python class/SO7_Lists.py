@@ -106,9 +106,6 @@ def max(*numbers):
     return max, min
     
 print(max(5, 9, 7, 4, 3))
-'''
-
-
 
 def max(listnum):
     max = listnum[0]
@@ -120,16 +117,8 @@ def max(listnum):
 
 listnum = [5, 0, 7, 4, 2, 3]
 print(max(listnum))
+'''
 
 
 
-try : 
-    #code to exectue
-    pass
-except Exception:
-    #error action
-    pass
-else : #not mendatory
-    pass
-finally: #not mendatory
-    pass
+
