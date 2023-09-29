@@ -59,7 +59,6 @@ while True:
         else: print("odd")
     except ValueError as error:
         print(error)      
-'''
 
 while True:
     try : 
@@ -76,7 +75,15 @@ while True:
             else :  print("not prime")
         break
     except ValueError as error:
-        print(error)
+        print(error)        
+'''
 
+
+
+
+import numpy as np
+
+npoints = 21
+print(np.linspace(-2.0, 2.0, npoints))
 
     
