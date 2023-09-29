@@ -83,7 +83,8 @@ while True:
 
 import numpy as np
 
-npoints = 21
-print(np.linspace(-2.0, 2.0, npoints))
+vect = np.linspace(10, 30, 20, dtype=int)
+vect[4] = 1
+print(vect)
 
     
