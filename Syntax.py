@@ -99,25 +99,3 @@ max(5, 9, 7, 4, 3)
 Git
 git add -A        git commit -m "Commit 2"       git pull          git push
 """
-
-import numpy as np 
-vec1 = np.random.randint(1,5, size = 5)
-vec2 = np.random.randint(1,5, size = 5)
-print(vec1, vec2)
-vec3 = vec1 + vec2
-print(vec3)
-
-import numpy as np 
-og = np.linspace(0,99, 100)
-
-recherche = 6.999
-save = abs(og[0]-recherche)
-result = 0
-
-for i in range(len(og)):
-    dif = abs(og[i]-recherche)
-    print(dif)
-    if(save > dif):
-        result = og[i]
-        save = dif
-print(result)
