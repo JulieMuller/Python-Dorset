@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #F3F5F6;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,11 +19,12 @@
 
         .login-container {
             text-align: center;
-            max-width: 400px;
-            padding: 20px;
+            max-width: 800px;
+            padding: 30px;
             background-color: #fff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 600px;
         }
 
         h2 {
@@ -38,21 +39,24 @@
 
         input {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
+            padding: 15px;;
+            margin-bottom: 20px;
             box-sizing: border-box;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;   
         }
 
         button {
             background-color: #0F6CBF;
             color: #fff;
-            padding: 10px 1px;
+            padding: 15px 20px;
             border: none;
             border-radius: 10px;
-            cursor: pointer;
-            width: 100%;
+            cursor: pointer;     
+            font-size: 20px;       
         }
 
         button:hover {
@@ -61,9 +65,18 @@
 
         .company-logo {
             max-width: 100%;
-            height: auto;
+            width: 250px;
+            height: 250px;
             margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;  
         }
+
+        .login-container {
+            text-align: left;            
+        } 
+  
 
     </style>
 </head>
@@ -72,17 +85,15 @@
 <body>
     <div class="login-container">
         <img src="{{url_for('static', filename='logo.png')}}" alt="Company Logo" class="company-logo">
-        <h2>Login</h2>
+        <!-- <h2>Login</h2> -->
         <form action="/login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <!--<label for="username">Username:</label> -->
+            <input type="text" id="username" name="username" required class="text-box">
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
+            <!--<label for="password">Password:</label> -->
+            <input type="password" id="password" name="password" required>            
             
-            
-            <button type="submit">Login</button>
+            <button type="submit">Log in</button>
         </form>
     </div>
 </body>
